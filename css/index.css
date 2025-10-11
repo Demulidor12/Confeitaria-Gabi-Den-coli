@@ -1,0 +1,25 @@
+header {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: antiquewhite;
+}
+
+footer {
+    background-color: chocolate;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#fist {
+    margin-left: 54%;
+    padding-right: 2%;
+}
+
+#second {
+    padding-right: 2%;
+}
