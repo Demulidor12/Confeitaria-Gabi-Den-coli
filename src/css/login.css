@@ -1,0 +1,36 @@
+.flex-container{
+    margin: auto;
+    height: 100vh;
+}
+
+.flex-item-left{
+    margin: auto;
+    background-image: url(/src/imgs/banner-login.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 100%;
+
+}
+
+.flex-item-left h3{
+    color: white;
+    text-align: center;
+    margin-top: 50vh;
+    border: 15px solid rgb(233, 169, 169);
+
+}
+
+
+#informações {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#subdiv2 {
+    padding-top: 4.95%;
+}
+
+a {
+    color: black
+}

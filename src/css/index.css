@@ -1,0 +1,255 @@
+/* body */
+
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* dt */
+
+dt {
+    color: #fff;;
+}
+
+/* dd */
+
+dd {
+    color: #fff;
+}
+
+/* a */
+
+a {
+    padding-left: 15px;
+    color: #c4a47c;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+/* h2 */
+
+h2 {
+    color: #c4a47c;
+}
+
+/* h3 */
+
+h3 {
+    color: #fff;
+}
+
+/* p */
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* iframe */
+
+iframe {
+    margin: 50px 0;
+}
+
+/* class */
+
+/* topo */
+
+div.topo {
+    background-color: #604829;
+    width: 100%;
+    text-align: right;
+    position: fixed;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a.topo {
+    margin-right: 200px;
+    text-decoration: underline;
+}
+
+img.topo {
+    width: 100px;
+    position: fixed;
+    left: 200px;
+    top: -5px
+}
+
+/* banner */
+
+div.banner {
+    background-image: url(assets/parallax-imagem1.png);
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 250px 0;
+}
+
+/* texto */
+
+div.texto {
+    margin: 0 50px;
+    padding-top: 100px;
+    padding-bottom: 15px;
+}
+
+h2.texto {
+    margin-top: -70px;
+}
+
+p.texto {
+    margin-right: 220px;
+    margin-left: 220px;
+}
+
+/* sub-banner */
+
+div.sub-banner1{
+    
+    padding: 150px 0;
+    width: 100%;
+    background-image: url(assets/parallax-imagem2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+div.sub-banner2 {
+    padding: 150px 0;
+    background-image: url(assets/parallax-imagem3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+h3.sub-banner {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 15px 720px;
+    padding: 5px;
+    background-color: #604829;
+}
+
+h1 h3.sub-banner {
+    font-family: 'Fraunces', serif;
+}
+
+/* contatos */
+
+div.contatos {
+    background-image: url(assets/parallax-imagem4.png);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+h2.contatos {
+    background-color: #604829;
+    color: #fff;
+    margin-left: 510px;
+    margin-top: -15px;
+    margin-right: 510px;
+    padding: 10px 0;
+}
+
+p.contatos {
+    background-color: #604829;
+    color: #fff;
+    padding: 15px 0;
+    margin: -14px 610px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+
+/* horas */
+
+div.horas {
+    padding-top: 170px;
+    padding-bottom: 20px;
+    background-image: url(assets/cafeteria.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+h2.horas {
+    margin-top: -50px;
+    margin-bottom: 90px;
+}
+
+span {
+    color: #a37333;
+}
+
+.horas dt, .horas dd {
+    display: block;
+    position: relative;
+    color: #a37333;
+    
+}
+
+.horas dt {
+    text-align: left;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+
+.horas dd {
+    text-align: right;
+    margin-right: 500px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.horas dt::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 110px;
+    right: 620px;
+    border: 1px solid #ffffff;
+    width: 47%;
+    float: center;
+}
+
+dt h3 {
+    color: #a37333;
+}
+
+/* rodape */
+
+div.rodapé {
+    width: 100%;
+    position: relative;
+    background-color: #000000;
+    color: #fff;
+    padding-top: 10px;
+    margin-top: -16px;
+
+}
+
+/* seta */
+
+img.seta {
+    position: absolute;
+    bottom: 79px;
+    right: 15px;
+}

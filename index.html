@@ -1,20 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/estilo.css">
+    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato&family=Oswald&display=swap" rel="stylesheet">
     <title>Confeitaria Gabi Denícoli</title>
 </head>
 <body>
     <header>
-        <a id="fist" href="/views/">Produtos</a><a id="second" href="/views/encomendar">Encomendar</a><a id="second" href="/views/pedidos.html">Meus pedidos</a><a id="second" href="/views/sobreNos.html">Sobre nós</a>
+        <div class="topo">
+            <img class="topo" src="/src/imgs/logo.png" alt="Confeitaria Gabi Denícoli" title="Confeitaria Gabi Denícoli">
+            <a href="/src/views/produtos.html">PRODUTOS</a> <a href="/src/views/encomendar.html">ENCOMENDAR</a> <a href="/src/views/pedidos.html">PEDIDOS</a> <a href="/src/views/login.html">LOGIN</a> <a class="topo" href="">PROCURAR</a>
+        </div>
+        <div class="banner" id="banner">
+            <h1>Confeitaria Gabi Denícoli</h1>
+        </div>
     </header>
     <main>
-        Bem vindo a Confeitaria Gabi Denícoli aqui presamos em entrega o melhor para cliente *texto provisorio*
+        <div class="texto">
+            <h2 class="texto">O QUE É A CONFEITARIA GABI DENÍCOLI?</h2>
+            <p  class="texto">texto apresentado a empressa</p>
+        </div>
+        <div class="contatos" id="contatos">
+            <h2 class="contatos">Contatos & Endereço</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7346.254844548052!2d-43.364712467659004!3d-22.98234139602229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-904!5e0!3m2!1spt-BR!2sbr!4v1642532754862!5m2!1spt-BR!2sbr" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <ul class="contatos" type="none">
+                <li><p class="contatos">Telefone & Whatsapp: (**) *****-****</p></li>
+                <li><p class="contatos">E-mail: *********</p></li>
+                <li><p class="contatos">Endereço: ***********</p></li>
+            </ul>
+        </div>
+        <div class="horas" id="horários">
+            <h2 class="horas">HORÁRIOS DE FUNCIONAMENTO</h2>
+
+            <dl>
+                <dt><h3>SEGUNDA</h3></dt>
+                <dd><span>FECHADO</span></dd>
+
+                <dt><h3>TERÇA</h3></dt>
+                <dd>09:00 - 22:00</dd>
+
+                <dt><h3>QUARTA</h3></dt>
+                <dd>09:00 - 22:00</dd>
+
+                <dt><h3>QUINTA</h3></dt>
+                <dd>09:00 - 22:00</dd>
+
+                <dt><h3>SEXTA</h3></dt>
+                <dd>09:00 - 22:00</dd>
+
+                <dt><h3>SABADO</h3></dt>
+                <dd>12:00 - 22:00</dd>
+
+                <dt><h3>DOMINGO</h3></dt>
+                <dd>12:00 - 22:00</dd>
+            </dl>
+        </div>
     </main>
     <footer>
-        <p>Feito por Lucas Silva Luz, </p>
+        <div class="rodapé">
+            <P>Desenvolvido por <span>Lucas Silva Luz</span>,</P>
+            <a href="#banner"><img class="seta" src="/src/imgs/seta-para-cima.png" alt="seta para cima"></a>
+        </div>
     </footer>
 </body>
 </html>
