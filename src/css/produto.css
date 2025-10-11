@@ -1,0 +1,32 @@
+
+
+.cartoes-produtos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cartao-produtos {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.cartao-imagem img {
+    height: 25vh;
+    text-align: center;
+}
+
+.flex-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-button button {
+    font-size: 3vh;
+    text-decoration: none;
+    
+}
