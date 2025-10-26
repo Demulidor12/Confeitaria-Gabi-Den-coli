@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/estilo.css">
         <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" href="../css/produto.css">
+        <link rel="stylesheet" href="../css/encomedar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato&family=Oswald&display=swap" rel="stylesheet">
@@ -21,7 +21,81 @@
             </div>
         </header>
         <main>
+            <div>
+                <h1>Encomenda — Confeitaria Doçura</h1>
+                <p class="lead">Escolha seus doces, ajuste quantidades e finalize sua encomenda rapidamente.</p>
+            </div>
+            <section class="card">
+                <h2>Cardápio</h2>
+                <p class="small">Clique nos + para adicionar ao carrinho. Selecione sabores quando aplicável.</p>
 
+
+                <div class="prod-list" id="products">
+                    <!-- Produtos gerados por JS -->
+                </div>
+                
+                <hr style="margin:16px 0" />
+
+
+                <h3>Detalhes da encomenda</h3>
+                <form id="orderForm" onsubmit="return handleSubmit(event)">
+                    <div style="display:grid;gap:12px;margin-top:8px">
+                        <div>
+                            <label for="name">Nome completo</label>
+                            <input id="name" name="name" type="text" placeholder="Maria Silva" required />
+                        </div>
+                        <div>
+                            <label for="email">E‑mail</label>
+                            <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required />
+                        </div>
+                        <div>
+                            <label for="phone">Telefone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="(31) 9xxxx-xxxx" required />
+                        </div>
+                        <div>
+                            <label for="pickup">Retirada ou entrega?</label>
+                            <select id="pickup" name="pickup">
+                            <option value="pickup">Retirar na loja</option>
+                            <option value="delivery">Entrega (taxa adicional)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="date">Data e hora desejada</label>
+                            <input id="date" name="date" type="datetime-local" required />
+                        </div>
+                        <div>
+                            <label for="notes">Observações (sabores, decoração, alérgenos)</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Ex: cobertura sem lactose"></textarea>
+                        </div>
+
+
+                        <div style="display:flex;gap:8px;align-items:center">
+                            <button type="submit" class="btn">Enviar encomenda</button>
+                            <button type="button" class="btn secondary" onclick="resetOrder()">Limpar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+
+            <!-- Coluna direita: resumo do pedido -->
+            <aside class="card summary">
+                <h2>Resumo do pedido</h2>
+                <div id="cartItems">
+                    <p class="small">Nenhum item no carrinho</p>
+                </div>
+                <div class="line">
+                    <span>Subtotal</span><span id="subtotal">R$ 0,00</span>
+                </div>
+                <div class="line">
+                    <span>Entrega</span><span id="delivery">R$ 0,00</span>
+                </div>
+                <div class="line total">
+                    <span>Total</span><span id="total">R$ 0,00</span>
+                </div>
+                <p class="small" style="margin-top:12px">Forma de pagamento será confirmada após contato. (Ex: Pix, Dinheiro, Cartão)</p>
+            </aside>
         </main>
+        <script src="../js/encomendar.js"></script>
     </body>
 </html>
